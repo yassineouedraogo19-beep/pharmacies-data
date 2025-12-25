@@ -124,6 +124,24 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19   // Niveau maximum autorisé
 }).addTo(map);
 
+function showRoute(index) {
+  const ph = pharmacies[index];
+
+  // Supprimer l'ancien itinéraire si déjà tracé
+  if (routingControl) {
+    map.removeControl(routingControl);
+  }
+
+  // Créer un nouvel itinéraire
+  routingControl = L.Routing.control({
+    waypoints: [
+      userMarker.getLatLng(), // position de l'utilisateur
+      L.latLng(ph.coords)     // position de la pharmacie
+    ],
+    routeWhileDragging: true,
+    fitSelectedRoutes: false // ⚡ Empêche le zoom automatique
+  }).addTo(map);
+}
 
      
  // Pharmacie de garde (cercle vert avec croix blanche)
