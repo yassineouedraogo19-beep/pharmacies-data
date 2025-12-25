@@ -85,7 +85,7 @@
                                 {name:"Pharmacie Hamdalaye", coords:[12.375417821996, -1.551419948705491], phone:"+226 25 34 36 94", address:"Hamdalaye"},
                                 {name:"Pharmacie Hanniel", coords:[12.379898450305982, -1.4524616305184324], phone:"+226 25 36 60 20", address:"Balkuy"},
                                 {name:"Pharmacie Hope", coords:[12.405785532754377, -1.43227781986894], phone:"+226 71 14 22 22", address:"saaba"},
-                                {name:"Pharmacie Aimevo", coords:[12.329925447732005, -1.6149816584949848], phone:"+226 25 39 63 99", address:"zagtouli"},
+                                {name:"Pharmacie Aimevo", coords:[12.329925447732005, -1.6149816584949848], phone:"+226 25 39 63 99", address:"Karpala"},
                                  {name:"Pharmacie Charis", coords:[12.32989400363088, -1.6151104045264584], phone:"+226 25 39 63 99", address:"zagtouli"},
                                    
 
