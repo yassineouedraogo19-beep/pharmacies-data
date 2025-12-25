@@ -108,19 +108,22 @@
 const map = L.map('map', {
   center: [12.3714, -1.5197],
   zoom: 13,
-  zoomControl: true,   // Active les boutons +/-
-  scrollWheelZoom: true, // Active le zoom avec la molette
-  touchZoom: true,       // Active le zoom tactile
-  doubleClickZoom: true  // Active le zoom au double-clic
+  zoomControl: true,        // Boutons +/-
+  scrollWheelZoom: true,    // Zoom molette
+  touchZoom: true,          // Zoom tactile
+  doubleClickZoom: true,    // Zoom double-clic
+  zoomSnap: 1,              // Le zoom reste calé sur des niveaux entiers
+  zoomDelta: 1,             // Chaque cran de molette = +1 ou -1
+  wheelPxPerZoomLevel: 120  // Sensibilité de la molette
 });
 
-// Ajouter le fond de carte
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
   subdomains: 'abcd',
   minZoom: 1,   // Niveau minimum autorisé
   maxZoom: 19   // Niveau maximum autorisé
 }).addTo(map);
+
 
      
  // Pharmacie de garde (cercle vert avec croix blanche)
